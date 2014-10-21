@@ -1,0 +1,18 @@
+<h1>Would You Like to Make a New Store?</h1>
+Make sure you OK it with Master Blaster first!
+
+<%= form_for :stores, url: stores_path do |f| %>
+  <p>
+    <%= f.label :store_name %><br>
+    <%= f.text_field :store_name %>
+  </p>
+ 
+  <p>
+    <%= f.label :What_are_ya_sellin? %><br>
+    <%= f.text_area :What_are_ya_sellin? %>
+  </p>
+ 
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>
